@@ -25,7 +25,7 @@ class EnquiriesController < ApplicationController
 
     respond_to do |format|
       if @enquiry.save
-        EnquiryMailer.with(enquiry: @enquiry).enquiry_received_message.deliver_later
+        EnquiryMailer.with(enquiry: @enquiry).enquiry_received_message.deliver_now
          logger.info "free demo----------- #{EnquiryMailer}"
 
          flash[:success] = "Thank you for your order! We'll get contact you soon!"

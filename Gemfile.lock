@@ -100,6 +100,7 @@ GEM
     nio4r (2.5.5)
     nokogiri (1.11.1-x64-mingw32)
       racc (~> 1.4)
+    pg (1.2.3-x64-mingw32)
     popper_js (1.16.0)
     puma (4.3.7)
       nio4r (~> 2.0)
@@ -191,6 +192,7 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   jquery-rails
   mysql2 (>= 0.4.4)
+  pg
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.4)
   sass-rails (>= 6)
