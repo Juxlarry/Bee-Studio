@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Appointment type:</strong>
+  <%= @payment.appointment_type_id %>
+</p>
+
+<p>
+  <strong>Amount paid:</strong>
+  <%= @payment.amount_paid %>
+</p>
+
+<p>
+  <strong>Date received:</strong>
+  <%= @payment.date_received %>
+</p>
+
+<p>
+  <strong>Fullname:</strong>
+  <%= @payment.fullname %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @payment.user_id %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @payment.status %>
+</p>
+
+<p>
+  <strong>Comments:</strong>
+  <%= @payment.comments %>
+</p>
+
+<p>
+  <strong>Balance:</strong>
+  <%= @payment.balance %>
+</p>
+
+<%= link_to 'Edit', edit_payment_path(@payment) %> |
+<%= link_to 'Back', payments_path %>
