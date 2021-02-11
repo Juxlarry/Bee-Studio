@@ -25,10 +25,16 @@ class EnquiriesController < ApplicationController
 
     respond_to do |format|
       if @enquiry.save
-        format.html { redirect_to @enquiry, notice: "Enquiry was successfully created." }
+        UserMailer.with(enquiry: @enquiry).enquiry_received_message.deliver_later
+         logger.info "free demo----------- #{UserMailer}"
+
+         flash[:success] = "Thank you for your order! We'll get contact you soon!"
+
+        format.html { redirect_to root_path, notice: 'Enquiry was successfully created.' }
         format.json { render :show, status: :created, location: @enquiry }
       else
-        format.html { render :new, status: :unprocessable_entity }
+        flash.now[:error] = "Your order form had some errors. Please check the form and resubmit."
+        format.html { render :new }
         format.json { render json: @enquiry.errors, status: :unprocessable_entity }
       end
     end
