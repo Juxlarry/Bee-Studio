@@ -1,4 +1,4 @@
-class UserMailer < ApplicationMailer
+class EnquiryMailer < ApplicationMailer
  
     def enquiry_received_message
     @enquiry = params[:enquiry]
@@ -6,7 +6,7 @@ class UserMailer < ApplicationMailer
     puts "User #{@enquiry}"
     puts "---------------------------------------"
     email_with_name = %(<#{@enquiry.email}>)
-    mail(to: email_with_name, subject: ;'Thank you for your enquiry')
+    mail(to: email_with_name, subject: 'Thank you for your enquiry')
     end
 
 end
