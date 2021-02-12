@@ -49,6 +49,8 @@ test:
 #
 production:
   <<: *default
+  adapter:  pgsql
+  encoding: utf8mb4
   database: BB_Studio_production
-  username: BB_Studio
-  password: <%= ENV['BB_STUDIO_DATABASE_PASSWORD'] %>
+  # username: BB_Studio
+  # password: <%= ENV['BB_STUDIO_DATABASE_PASSWORD'] %>
