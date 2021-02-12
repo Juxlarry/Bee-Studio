@@ -50,7 +50,7 @@ Rails.application.configure do
     :port                 => "587",
     :domain               => "localhost:3000",
     :user_name            => "juxlarry@gmail.com",
-    :password             => "<%= ENV['EMAIL_PASSWORD'] %>",
+    :password             => "kvsndbkdjvpkdbln",
     :authentication       => "plain",
     :enable_starttls_auto => true
   }
