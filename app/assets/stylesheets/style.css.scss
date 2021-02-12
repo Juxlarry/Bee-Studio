@@ -66,10 +66,10 @@ hr{
 
 .pad {padding: 130px 0px;}
 
-.parallax-one { background: url('/assets/promo/p1.jpg') fixed 50%;}
-.parallax-two { background: url('/assets/background/overlay.png'), url('/assets/promo/p2.jpg') fixed 50%;}
-.parallax-three { background: url('/assets/background/overlay.png'), url('/assets/promo/p3.jpg') fixed 50%;}
-.parallax-four { background: url('/assets/background/overlay.png'), url('/assets/promo/p4.jpg') fixed 50%;}
+.parallax-one { background: image-url('/assets/promo/p1.jpg') fixed 50%;}
+.parallax-two { background: image-url('/assets/background/overlay.png'), image-url('/assets/promo/p2.jpg') fixed 50%;}
+.parallax-three { background: image-url('/assets/background/overlay.png'), image-url('/assets/promo/p3.jpg') fixed 50%;}
+.parallax-four { background: image-url('/assets/background/overlay.png'), image-url('/assets/promo/p4.jpg') fixed 50%;}
 
 /* 
  * Basic CSS ends 
@@ -916,7 +916,7 @@ hr{
 /* meets */
 
 .meet {
-	background: #252c37 url('/assets/flat/back-ptrn.png') repeat;
+	background: #252c37 image-url('/assets/flat/back-ptrn.png') repeat;
 	box-shadow: inset 0 0 10px #000;
 }
 .meet .meet-item {
